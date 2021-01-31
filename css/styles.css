@@ -26,6 +26,17 @@ font-family: Raleway    700;
 font-family: Roboto     900, 700, 500, 400;
 Hover Button-Hero   background: #188CE8; !!!!!!!!
 No-Hover Button-Hero  background: #2196F3; !!!!!!!!
+
+++++++++++++++++++++++++
+regular customers 
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+++++++++++++++++++++++++
+antenna, astronaut, clock, diagram,  - #212121 and #2196f3
+yaco, tagline, twitter, linkedin, instagram, facebook, companytag, company, brand, fosterpeters - #afb1b8
+smartphone, envelope - #757575
+
 */
 :root {
   --primary-text-color: #757575;
@@ -40,6 +51,7 @@ No-Hover Button-Hero  background: #2196F3; !!!!!!!!
   --button-hover-hero-bg-color: #188ce8;
   --bottom-line-menu: #ececec;
   --card-set-gap: 30px;
+  --social-fill-color: #afb1b8;
 }
 
 html {
@@ -371,7 +383,6 @@ button {
 
 .team-list .team-card {
   background-color: var(--primary-bg-color);
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -410,6 +421,40 @@ button {
   line-height: 1.188;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+/* social links of Team members */
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-fill-color);
+}
+
+.social-list-link:hover .social-icon,
+.social-list-link:focus .social-icon {
+  fill: var(--primary-bg-color);
 }
 
 /* ======= Footer .container  ======= */
