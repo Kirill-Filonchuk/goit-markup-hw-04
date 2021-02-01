@@ -33,10 +33,18 @@
             <!--our contacts-->
             <ul class="header-contact list">
                 <li class="items">
-                    <a href="mailto:info@devstudio.com" class="header-contact-mail"><span lang="en">info@devstudio.com</span></a>
+                    <a href="mailto:info@devstudio.com" class="header-contact-mail">
+                        <svg class="contact-icon" width="16px" height="12px">
+                            <use href="./images/sprite.svg#envelope"></use>
+                        </svg>
+                        <span lang="en">info@devstudio.com</span></a>
                 </li>
                 <li class="items">
-                    <a href="tel:+380961111111" class="header-contact-tel">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="header-contact-tel">
+                        <svg class="contact-icon" width="10px" height="16px">
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
                 </li>
                
             </ul>
@@ -47,7 +55,7 @@
     <main>
         <!--Hero-->
         
-        <section class="hero">
+        <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button">Заказать услугу</button>
@@ -62,24 +70,45 @@
 
                 <ul class="particular-list list">
                     <li class="particular-list-items">
+                        <div class="particular-thumb">
+                            <svg class="particular-icon" height="70px">
+                                <use href="./images/sprite.svg#antenna"></use>
+                            </svg>
+                        </div>
                         <div class="particular-list-block">
+                    
                             <h3 class="title">Внимание к деталям</h3>
                             <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </div>
                     </li>
                     <li class="particular-list-items">
+                        <div class="particular-thumb">
+                            <svg class="particular-icon" height="70px">
+                                <use href="./images/sprite.svg#clock"></use>
+                            </svg>
+                        </div>
                         <div class="particular-list-block">
                             <h3 class="title">Пунктуальность</h3>
                             <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </div>
                     </li>
                     <li class="particular-list-items">
+                        <div class="particular-thumb">
+                            <svg class="particular-icon" height="70px">
+                                <use href="./images/sprite.svg#diagram"></use>
+                            </svg>
+                        </div>
                         <div class="particular-list-block">
                             <h3 class="title">Планирование</h3>
                             <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </div>
                     </li>
                     <li class="particular-list-items">
+                        <div class="particular-thumb">
+                            <svg class="particular-icon" height="70px">
+                                <use href="./images/sprite.svg#astronaut"></use>
+                            </svg>
+                        </div>
                         <div class="particular-list-block">
                             <h3 class="title">Современные технологии</h3>
                             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
@@ -262,42 +291,42 @@
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="customers-order list">
                     <li class="customers-order-item">
-                        <a class="customer-order-link">
+                        <a class="customer-order-link" href="#">
                             <svg class="customer-icon"  widht="45px" height="50px">
                                 <use href="./images/sprite.svg#yaco"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-order-item">
-                        <a class="customer-order-link">
+                        <a class="customer-order-link" href="#">
                             <svg class="customer-icon" widht="40px" height="52px">
                                 <use href="./images/sprite.svg#tagline"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-order-item">
-                        <a class="customer-order-link">
+                        <a class="customer-order-link" href="#">
                             <svg class="customer-icon" widht="41px" height="43px">
                                 <use href="./images/sprite.svg#company"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-order-item">
-                        <a class="customer-order-link">
+                        <a class="customer-order-link" href="#">
                             <svg class="customer-icon" widht="80px" height="42px">
                                 <use href="./images/sprite.svg#fosterpeters"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-order-item">
-                        <a class="customer-order-link">
+                        <a class="customer-order-link" href="#">
                             <svg class="customer-icon"  widht="59px" height="46px">
                                 <use href="./images/sprite.svg#brand"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customers-order-item">
-                        <a class="customer-order-link">
+                        <a class="customer-order-link" href="#">
                             <svg class="customer-icon"  widht="89px" height="50px">
                                 <use href="./images/sprite.svg#companytag"></use>
                             </svg>
@@ -313,39 +342,47 @@
     <footer class="footer">
         <div class="container">
         <div class="footer-section">
-<div>
-            <div class="footer-logo">
-                <a href="#" class="logo" lang="en">Web<span
-                            class="logo-studio-color-footer">Studio</span></a>
+            <div class="footer-logo-adress">
+                <div class="footer-logo">
+                    <a href="#" class="logo" lang="en">Web<span
+                                class="logo-studio-color-footer">Studio</span></a>
+                </div>
+
+                <!--Our address and our contacts-->
+                <address class="address-futer">
+
+                    <ul class="address-list list">
+                        <li class="items"><a href="https://goo.gl/maps/gbBX1J2FMPTJKqRh9" class="address-office"> г. Киев, б-р Леси
+                                Украинки, 26</a></li>
+                        <!--пр-т Леси Украинки нет в Киеве, а есть б-р Леси Украинки-->
+                        <li class="items"><a href="mailto:info@example.com" class="address-mail">info@example.com</a></li>
+                        <li class="items"><a href="tel:+380991111111" class="adress-tel">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
             </div>
-
-            
-</div>
-            <b class="footer-call">присоединяйтесь</b>
-
-            <div class="footer-social">
-                <!-- <b class="footer-call">присоединяйтесь</b> -->
-                <ul class="social-list list">
-                    <li class="social-list-items"><a class="social-list-link" href="#">
-                            <svg class="social-icon">
+                <div class="footer-social">
+                <b class="footer-call">присоединяйтесь</b>
+                <ul class="footer-social-list list">
+                    <li class="footer-social-list-items"><a class="footer-social-list-link" href="#">
+                            <svg class="footer-social-icon">
                                 <use href="./images/sprite.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list-items"><a class="social-list-link" href="#">
-                            <svg class="social-icon">
+                    <li class="footer-social-list-items"><a class="footer-social-list-link" href="#">
+                            <svg class="footer-social-icon">
                                 <use href="./images/sprite.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list-items"><a class="social-list-link" href="#">
-                            <svg class="social-icon">
+                    <li class="footer-social-list-items"><a class="footer-social-list-link" href="#">
+                            <svg class="footer-social-icon">
                                 <use href="./images/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list-items"><a class="social-list-link" href="#">
-                            <svg class="social-icon">
+                    <li class="footer-social-list-items"><a class="footer-social-list-link" href="#">
+                            <svg class="footer-social-icon">
                                 <use href="./images/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
@@ -353,15 +390,7 @@
                 </ul>
             </div>
         </div>
-            <!--Our address and our contacts-->
-            <address class="address-futer">
-                    
-            <ul class="address-list list">
-                <li class="items"><a href="https://goo.gl/maps/gbBX1J2FMPTJKqRh9" class="address-office"> г. Киев, б-р Леси Украинки, 26</a></li><!--пр-т Леси Украинки нет в Киеве, а есть б-р Леси Украинки--> 
-                <li class="items"><a href="mailto:info@example.com" class="address-mail">info@example.com</a></li>
-                <li class="items"><a href="tel:+380991111111" class="adress-tel">+38 099 111 11 11</a></li>
-            </ul>
-            </address>
+            
         </div>
     </footer>
 </body>

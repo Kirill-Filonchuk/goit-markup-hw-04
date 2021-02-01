@@ -52,6 +52,7 @@ smartphone, envelope - #757575
   --bottom-line-menu: #ececec;
   --card-set-gap: 30px;
   --social-fill-color: #afb1b8;
+  --footer-social-fill-color: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -197,6 +198,10 @@ button {
 
 .header-contact-tel,
 .header-contact-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -207,6 +212,11 @@ button {
   padding-bottom: 32px;
 }
 
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-contact-tel:hover,
 .header-contact-tel:focus,
 .header-contact-mail:hover,
@@ -214,9 +224,21 @@ button {
   color: var(--accent-color);
 }
 
-/* ========= Hero</br> ========= */
+/* ========= Hero ========= */
 
-/* Временное задание фона */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/img-hero.jpg');
+  margin: auto;
+}
+
 .hero {
   background-color: var(--footer-bg-color);
   padding-top: 200px;
@@ -300,14 +322,19 @@ button {
 
 .particular-list-items {
   width: 270px;
+  background-color: var(--second-bg-color);
 }
 
 .particular-list-items:not(:last-child) {
   margin-right: 30px;
 }
 
-.particular-list-items .title {
-  padding-bottom: 10px;
+.particular-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 55px;
 }
 
 /* ======= Practice ======= */
@@ -485,7 +512,6 @@ button {
 .customers-order {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   margin-right: calc(-1 * var(--card-set-gap));
   margin-bottom: calc(-1 * var(--card-set-gap));
 }
@@ -598,6 +624,54 @@ button {
   color: var(--primary-bg-color);
 
   margin-bottom: 20px;
+}
+
+.footer-logo-adress {
+  margin-right: 70px;
+}
+
+/* ======= footer-social-links ======= */
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list-items {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-list-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-social-fill-color);
+  border-radius: 50%;
+  height: 100%;
+
+  fill: var(--primary-bg-color);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  /* fill: var(--social-fill-color); */
+  /* fill: currentColor; */
+}
+
+.footer-social-list-link:hover .social-icon,
+.footer-social-list-link:focus .social-icon {
+  fill: var(--primary-bg-color);
 }
 
 /* ======= CSS rules for Portfolio.html ======= */
