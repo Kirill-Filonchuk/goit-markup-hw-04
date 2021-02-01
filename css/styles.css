@@ -431,14 +431,20 @@ button {
   justify-content: space-between;
 }
 
+.social-list-items {
+  width: 44px;
+  height: 44px;
+}
+
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-bg-color);
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  height: 100%;
+
+  fill: var(--social-fill-color);
 }
 
 .social-list-link:hover,
@@ -449,12 +455,73 @@ button {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--social-fill-color);
+  /* fill: var(--social-fill-color); */
+  /* fill: currentColor; */
 }
 
 .social-list-link:hover .social-icon,
 .social-list-link:focus .social-icon {
   fill: var(--primary-bg-color);
+}
+
+/* ======= Our regular customers  ======= */
+
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+
+  margin-bottom: 50px;
+}
+
+.customers-order {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
+}
+
+.customers-order-item {
+  width: 170px;
+  height: 90px;
+  margin-right: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+
+  flex-basis: calc(100% / 6 - var(--card-set-gap));
+}
+
+.customer-order-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--social-fill-color);
+  border-radius: 4px;
+  height: 100%;
+  color: var(--social-fill-color);
+}
+
+.customer-icon {
+  fill: currentColor;
+}
+
+.customer-order-link:hover,
+.customer-order-link:focus {
+  border-color: var(--accent-color);
+}
+
+.customer-order-link:hover .customer-icon,
+.customer-order-link:focus .customer-icon {
+  fill: var(--accent-color);
 }
 
 /* ======= Footer .container  ======= */
@@ -509,6 +576,28 @@ button {
   letter-spacing: 0.03em;
   text-decoration: inherit;
   color: var(--footer-rare-text-color);
+}
+
+.footer-section {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-call {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+
+  margin-bottom: 20px;
 }
 
 /* ======= CSS rules for Portfolio.html ======= */
