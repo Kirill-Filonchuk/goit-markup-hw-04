@@ -314,6 +314,7 @@ button {
   text-transform: uppercase;
   color: var(--second-text-color);
 
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -333,6 +334,36 @@ button {
   margin-right: 30px;
 }
 
+.particular-list-items::before {
+  content: '';
+  display: block;
+  background-color: var(--second-bg-color);
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+  background-size: 70px 70px;
+}
+
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+  background-size: 70px 70px;
+}
+
+.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+  background-size: 70px 70px;
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+  background-size: 70px 70px;
+}
+/* Not good experience
 .particular-thumb {
   display: flex;
   justify-content: center;
@@ -342,7 +373,7 @@ button {
   margin-bottom: 30px;
 
   background-color: var(--second-bg-color);
-}
+} */
 
 /* ======= Practice ======= */
 .practice {
