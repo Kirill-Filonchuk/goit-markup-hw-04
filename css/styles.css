@@ -236,7 +236,12 @@ button {
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/img-hero.jpg');
+
   margin: auto;
+
+  /* margin-left: auto;
+  margin-right:auto;
+  background-position: center; */
 }
 
 .hero {
@@ -322,7 +327,6 @@ button {
 
 .particular-list-items {
   width: 270px;
-  background-color: var(--second-bg-color);
 }
 
 .particular-list-items:not(:last-child) {
@@ -334,7 +338,10 @@ button {
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 55px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--second-bg-color);
 }
 
 /* ======= Practice ======= */
