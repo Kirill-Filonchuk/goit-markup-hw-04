@@ -145,6 +145,9 @@ button {
   margin-right: 93px;
 
   color: var(--accent-color);
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-studio-color-header {
@@ -664,6 +667,15 @@ button {
 
 .footer-logo-adress {
   margin-right: 70px;
+}
+
+.address-office:hover,
+.address-office:focus,
+.address-mail:hover,
+.address-mail:focus,
+.adress-tel:hover,
+.adress-tel:focus {
+  color: var(--accent-color);
 }
 
 /* ======= footer-social-links ======= */
